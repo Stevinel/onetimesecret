@@ -112,7 +112,7 @@ env.bak/
 venv.bak/
 migrations
 .migrations
-.onetimesecret/venv
+
 
 # Spyder project settings
 .spyderproject
