@@ -24,6 +24,8 @@ TIME_OF_DEATH = {
 
 
 class Secret(models.Model):
+    """The secret model contains all the information about the secret and its data"""
+    
     secret = pgcrypto.EncryptedCharField("Secret", max_length=100000)
     key_word = pgcrypto.EncryptedCharField("Pass phrase", max_length=100)
     is_viewed = models.CharField("Already viewed", max_length=100)
